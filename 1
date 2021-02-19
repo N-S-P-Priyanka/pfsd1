@@ -1,0 +1,32 @@
+[22:16, 29/01/2021] priyanka: class students:
+ count=0
+ def _init_(s,id,firstname,lastname,course,year,gpa,university,mobile):
+ s.id=id
+ s.firstname=firstname
+ s.lastname=lastname
+ s.course=course
+ s.year=year
+ s.gpa=gpa
+ s.university=university
+ s.mobile=mobile
+ students.count=students.count+1
+ def display(s):
+ print("student id : ",s.id)
+ print("student_firstname : ",s.firstname)
+ print("student_lastname : ",s.lastname)
+ print("course : ",s.course)
+ print("year : ",s.year)
+ print("GPA : ",s.gpa)
+ print("University : ",s.university)
+ print("student_email : ",s.firstname+s.lastname+"@gmail.com")
+ print("mobileno. : ",s.mobile)
+
+ob1=students(1234,'ABC','LASYA','PFSD','2nd year',8.9,'KLU',9898989898)
+ob1.display()
+print()
+ob2=students(7089,'DEF','AKHISTA','DTW','1st year',7.3,'SRM',7809809809)
+ob2.display()
+print()
+ob3=students(3454,'GHI','TEJA','EP','2nd year',9.1,'VIT',8054362134)
+ob3.display()
+print("total instances created=",students.count)

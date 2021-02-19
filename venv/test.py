@@ -1,0 +1,10 @@
+import demo
+import pytest
+def test_insert():
+ assert demo.insert()==1
+def test_delete():
+ assert demo.delete()==1
+def test_update():
+ assert demo.update()==1
+def test_view_record():
+ assert demo.view_record()==1
